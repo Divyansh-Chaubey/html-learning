@@ -11,12 +11,31 @@
 
 <script>
     function ra(){
-        var arr = ["ram", "shyam", "hari", "sita", "gita"];
+
+
+        // =============================================shift unshift===============================================
+
+        // var arr = ["ram", "shyam", "hari", "sita", "gita"];
+        // console.log(arr);
+        // arr.shift(); 
+        // console.log(arr);
+        // arr.unshift("krishna"); 
+        // console.log(arr);
+
+
+        var arr=[1,2,"radhe" ,"shyam"]
+        var arr1=[3,2,"radhe" ,"shyam"]
+          
+        arr = arr.concat(arr1);
+
         console.log(arr);
-        arr.shift(); 
+        console.log(arr.reverse()) // reverce an array
+        console.log(arr.slice(0,-1)) //slice an array from the start to its n-1 from it end index
+        arr.splice(2, 0, 8); // add element 8 at index 2
         console.log(arr);
-        arr.unshift("krishna"); 
-        console.log(arr);
+        console.log(arr.sort());//sort an array in asscending order
+        console.log(arr.reverse())// used it to make a descendinig order array after using sort
+
     }
 </script>
 </html>
