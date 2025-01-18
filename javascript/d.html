@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 200px; width: 200px;"><p></p></div>
+    <button onclick="cha()">show</button>
+    <button onclick="chas()">show2</button>
+    <button onclick="a()">reset</button>
+    <button onclick="br()">bor</button>
+    <button onclick="ch()">display</button>
+    
+</body>
+<script >
+    let count=0
+    function ch(){
+        count++
+        
+        if(count==1)
+        document.querySelector('div').innerHTML="<p>hello</P>"
+        else {
+        document.querySelector('p').style.display="none"
+        count=0
+        }
+
+    }
+
+
+    function cha(){
+        document.querySelector('body').style.backgroundColor="red"
+    }
+    function chas(){
+        document.querySelector('body').style.backgroundColor="green"
+    }
+    function a(){
+        document.body.style.backgroundColor="white"
+    }
+    function br(){
+        document.querySelector('div').style.border="1px solid black"
+    }
+
+
+
+</script>
+</html>
